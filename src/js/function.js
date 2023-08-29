@@ -5,4 +5,7 @@ export function rgr(number)  {
     else if (number === 0) {
         return "!";    
     }
+    else {
+        return " red green refactor" + rgr(number -1);
+    }
 }

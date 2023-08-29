@@ -25,14 +25,24 @@ describe("functions to practice", () => {
         expect(result).toEqual("!");
     });
 
-    test("It should return an error message if a number wasn't inputed", () => {
+    test("rgr should return an error message if a number wasn't inputed", () => {
         const result = rgr("Jason");
         expect(result).toEqual("Please enter a positive number!");
     });
 
-    test("It should return an error message if a number was negative", () => {
+    test("rgr should return an error message if a number was negative", () => {
         const result = rgr(-4);
         expect(result).toEqual("Please enter a positive number!");
+    });
+
+    test("rgr should return one instance of message if input is 1", () => {
+        const result = rgr(1);
+        expect(result).toEqual(" red green refactor!");
+    });
+
+    test("rgr should correctly return 4 messages if input is 4", () => {
+        const result = rgr(4);
+        expect(result).toEqual(" red green refactor red green refactor red green refactor red green refactor!")
     })
 
 
