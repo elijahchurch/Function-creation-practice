@@ -16,7 +16,7 @@
 //         expect(newUser.jupiterPassage).toEqual("");
 //     });
 
-import { rgr } from "../src/js/function.js";
+import { rgr,} from "../src/js/function.js";
 
 describe("functions to practice", () => {
 

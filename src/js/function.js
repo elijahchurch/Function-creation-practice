@@ -9,3 +9,13 @@ export function rgr(number)  {
         return " red green refactor" + rgr(number -1);
     }
 }
+
+export function addPrefix(prefix) {
+    return function(name) {
+        return `${prefix} ${name}`;
+    }
+}
+const addSir = addPrefix("Sir");
+const addMr = addPrefix("Mr.");
+const addMrs = addPrefix("Mrs.");
+const addDr = addPrefix("Dr.")
