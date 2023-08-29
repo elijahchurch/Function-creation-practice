@@ -25,5 +25,15 @@ describe("functions to practice", () => {
         expect(result).toEqual("!");
     });
 
+    test("It should return an error message if a number wasn't inputed", () => {
+        const result = rgr("Jason");
+        expect(result).toEqual("Please enter a positive number!");
+    });
+
+    test("It should return an error message if a number was negative", () => {
+        const result = rgr(-4);
+        expect(result).toEqual("Please enter a positive number!");
+    })
+
 
 })
