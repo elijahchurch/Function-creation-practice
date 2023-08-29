@@ -16,7 +16,7 @@
 //         expect(newUser.jupiterPassage).toEqual("");
 //     });
 
-import { rgr,} from "../src/js/function.js";
+import { rgr, addPrefix} from "../src/js/function.js";
 
 describe("functions to practice", () => {
 
@@ -43,6 +43,11 @@ describe("functions to practice", () => {
     test("rgr should correctly return 4 messages if input is 4", () => {
         const result = rgr(4);
         expect(result).toEqual(" red green refactor red green refactor red green refactor red green refactor!")
+    })
+
+    test("addPrefix will add whatever to the second input", () => {
+        const result = addPrefix("Bonkers")("Tonkers");
+        expect(result).toEqual("Bonkers Tonkers");
     })
 
 
