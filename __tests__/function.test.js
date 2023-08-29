@@ -16,3 +16,14 @@
 //         expect(newUser.jupiterPassage).toEqual("");
 //     });
 
+import { rgr } from "../src/js/function.js";
+
+describe("functions to practice", () => {
+
+    test("rgr should return '!' when 0 is entered", () => {
+        const result = rgr(0);
+        expect(result).toEqual("!");
+    });
+
+
+})
